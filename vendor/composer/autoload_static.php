@@ -136,6 +136,7 @@ class ComposerStaticInite0cac785a36f5c26069b0459ffb026df
         array (
             'Asm89\\Stack\\' => 12,
             'Alchemy\\Zippy\\' => 14,
+            'Ajgl\\Twig\\Extension\\' => 20,
         ),
     );
 
@@ -400,6 +401,10 @@ class ComposerStaticInite0cac785a36f5c26069b0459ffb026df
         array (
             0 => __DIR__ . '/..' . '/alchemy/zippy/src',
         ),
+        'Ajgl\\Twig\\Extension\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ajgl/breakpoint-twig-extension/src',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -491,6 +496,9 @@ class ComposerStaticInite0cac785a36f5c26069b0459ffb026df
     );
 
     public static $classMap = array (
+        'Ajgl\\Twig\\Extension\\BreakpointExtension' => __DIR__ . '/..' . '/ajgl/breakpoint-twig-extension/src/BreakpointExtension.php',
+        'Ajgl\\Twig\\Extension\\SymfonyBundle\\AjglBreakpointTwigExtensionBundle' => __DIR__ . '/..' . '/ajgl/breakpoint-twig-extension/src/SymfonyBundle/AjglBreakpointTwigExtensionBundle.php',
+        'Ajgl\\Twig\\Extension\\SymfonyBundle\\DependencyInjection\\AjglBreakpointTwigExtensionExtension' => __DIR__ . '/..' . '/ajgl/breakpoint-twig-extension/src/SymfonyBundle/DependencyInjection/AjglBreakpointTwigExtensionExtension.php',
         'Alchemy\\Zippy\\Adapter\\AbstractAdapter' => __DIR__ . '/..' . '/alchemy/zippy/src/Adapter/AbstractAdapter.php',
         'Alchemy\\Zippy\\Adapter\\AbstractBinaryAdapter' => __DIR__ . '/..' . '/alchemy/zippy/src/Adapter/AbstractBinaryAdapter.php',
         'Alchemy\\Zippy\\Adapter\\AbstractTarAdapter' => __DIR__ . '/..' . '/alchemy/zippy/src/Adapter/AbstractTarAdapter.php',
