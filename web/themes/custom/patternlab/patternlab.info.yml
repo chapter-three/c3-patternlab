@@ -1,0 +1,19 @@
+name: 'Pattern Lab'
+description: 'A custom Drupal 8 theme that demonstrates using an external Pattern Lab.'
+core: 8.x
+type: theme
+base theme: classy
+libraries:
+  - core/normalize
+  - patternlab/base
+
+component-libraries:
+  atoms:
+    paths:
+      - ../../../libraries/pattern-lab/source/_patterns/00-atoms
+  molecules:
+    paths:
+      - ../../../libraries/pattern-lab/source/_patterns/01-molecules
+  organisms:
+    paths:
+      - ../../../libraries/pattern-lab/source/_patterns/02-organisms

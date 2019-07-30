@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="199px" height="199px" viewBox="0 0 199 199" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>atom</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="atomic-design" transform="translate(-318.000000, -24.000000)">
+            <g id="atom" transform="translate(326.000000, 31.000000)">
+                <g id="Group">
+                    <g id="Oval">
+                        <circle stroke="#000000" stroke-width="15" cx="91.7" cy="92.5" r="91.6"></circle>
+                        <circle fill="#ABABAB" fill-rule="nonzero" cx="91.7" cy="92.5" r="52.8"></circle>
+                    </g>
+                    <path d="M186.3,35.7 C186.3,48.1 176.3,58.1 163.9,58.1 C151.5,58.1 141.5,48.1 141.5,35.7 C141.5,23.3 151.5,13.3 163.9,13.3 C176.2,13.3 186.3,23.3 186.3,35.7 Z" id="Path" fill="#ABABAB" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
