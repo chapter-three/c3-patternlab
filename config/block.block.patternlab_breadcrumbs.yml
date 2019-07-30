@@ -1,0 +1,22 @@
+uuid: dc484eb7-13d2-40f1-9c65-678bfb4dda09
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - patternlab
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: patternlab_breadcrumbs
+theme: patternlab
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

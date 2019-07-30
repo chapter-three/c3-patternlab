@@ -1,0 +1,22 @@
+uuid: 84294d4e-5757-45a9-869f-9453f51854c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - patternlab
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: patternlab_help
+theme: patternlab
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
