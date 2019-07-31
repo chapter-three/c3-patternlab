@@ -21,7 +21,10 @@
         "drupal/config_installer": "^1.0",
         "drupal/console": "^1",
         "drupal/core": "^8.6.15",
+        "drupal/default_content": "^1.0@alpha",
+        "drupal/fontawesome": "^2.13",
         "drupal/paragraphs": "^1.8",
+        "drupal/pathauto": "^1.4",
         "drupal/twig_xdebug": "^1.1",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "pantheon-systems/quicksilver-pushback": "~1",
@@ -33,7 +36,7 @@
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
         "classmap": [
