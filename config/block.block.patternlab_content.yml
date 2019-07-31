@@ -1,4 +1,4 @@
-uuid: e0dfb9c7-1dfc-45c0-a4d8-ced006a9116b
+uuid: 47ed8fb2-d4f7-47ab-9b47-a353eb0cc52e
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   theme:
     - patternlab
 _core:
-  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+  default_config_hash: CPx0cY9YgwfMHFhSYW2aA8RMFPSQImnyzTV8OUftTew
 id: patternlab_content
 theme: patternlab
 region: content
-weight: 0
+weight: 10
 provider: null
 plugin: system_main_block
 settings:

@@ -1,11 +1,11 @@
-uuid: afacd449-850e-421a-ba44-7f842c7555cd
+uuid: 5a5c1ab9-0850-4abb-8cba-ea1c98c8dfdc
 name: 'Pattern Lab'
 mail: hosting@chapterthree.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /blog
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

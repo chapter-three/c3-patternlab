@@ -1,4 +1,4 @@
-uuid: 3bf3e96f-6117-458d-84e9-157e4f93ba19
+uuid: f893509b-20bb-449c-957c-50fcc96948a7
 langcode: en
 status: true
 dependencies:
@@ -7,16 +7,16 @@ dependencies:
   theme:
     - patternlab
 _core:
-  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+  default_config_hash: BE3Rx2ntE7aS797_YQv8EfMfYoq7qcAQO_RW-TbgKoo
 id: patternlab_messages
 theme: patternlab
-region: highlighted
-weight: 0
+region: content
+weight: 1
 provider: null
 plugin: system_messages_block
 settings:
   id: system_messages_block
-  label: 'Status messages'
+  label: Messages
   provider: system
   label_display: '0'
 visibility: {  }

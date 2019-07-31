@@ -1,4 +1,4 @@
-uuid: dc484eb7-13d2-40f1-9c65-678bfb4dda09
+uuid: 836d9285-0f14-403b-b2a2-0ee63634ec7d
 langcode: en
 status: true
 dependencies:
@@ -7,10 +7,10 @@ dependencies:
   theme:
     - patternlab
 _core:
-  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+  default_config_hash: B6ueWU3EZcbHzhhkIsESDemAKw_DJyjYshh5ti66DSQ
 id: patternlab_breadcrumbs
 theme: patternlab
-region: breadcrumb
+region: breadcrumbs
 weight: 0
 provider: null
 plugin: system_breadcrumb_block
@@ -19,4 +19,9 @@ settings:
   label: Breadcrumbs
   provider: system
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/article/*\r\n/blog/*'
+    negate: true
+    context_mapping: {  }

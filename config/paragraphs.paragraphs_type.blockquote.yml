@@ -1,0 +1,11 @@
+uuid: 586758f8-9a38-4235-9b20-e4b534c29286
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: hQ_6ffopyTbs0kclUN4CfxalRBMyw5r03_L9-J-Kq4Y
+id: blockquote
+label: Blockquote
+icon_uuid: null
+description: 'A <em>Blockquote</em> contains a quotation with an optional source, e.g. a testimonial.'
+behavior_plugins: {  }

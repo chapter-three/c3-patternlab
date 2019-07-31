@@ -1,0 +1,27 @@
+uuid: de09a450-5b23-439e-af54-275e7386e0d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - patternlab
+_core:
+  default_config_hash: zJtYV9Afsfk6pFdXWg9ZM8yAu5JVOFFmLyU6cuV1w9U
+id: patternlab_title
+theme: patternlab
+region: header
+weight: 10
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/article/*\r\n/blog\r\n/contact\r\n/faq\r\n/forum\r\n/forum/*\r\n/search\r\n/search/*\r\n/user/*/plans"
+    negate: true
+    context_mapping: {  }

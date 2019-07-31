@@ -1,0 +1,36 @@
+uuid: b1050977-480e-4fcb-ae7c-b546c43904fc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:title_bar:1efa0b42-0ce4-4c67-bd3d-bdb26ed63934'
+  enforced:
+    module:
+      - kickstart_content
+  module:
+    - block_content
+    - system
+  theme:
+    - patternlab
+_core:
+  default_config_hash: a8JXaFu9rtseGKJrAtWlVR6oh_tqVgBwmBV31tfnBSg
+id: patternlab_title_bar_search
+theme: patternlab
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:1efa0b42-0ce4-4c67-bd3d-bdb26ed63934'
+settings:
+  id: 'block_content:1efa0b42-0ce4-4c67-bd3d-bdb26ed63934'
+  label: 'Title bar: Search'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search\r\n/search/*"
+    negate: false
+    context_mapping: {  }

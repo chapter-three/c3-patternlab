@@ -1,0 +1,36 @@
+uuid: e8162ac5-f9d2-4e37-80b2-122911eeb70c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:cta:de9351da-3424-4401-ba46-64709a9f12d4'
+  enforced:
+    module:
+      - kickstart_content
+  module:
+    - block_content
+    - system
+  theme:
+    - patternlab
+_core:
+  default_config_hash: 1Sc0YCPPbiHxX4GoAP5HD2hQCFwFOtSrI7W_ERmAc7A
+id: patternlab_cta_blog
+theme: patternlab
+region: content_below
+weight: 0
+provider: null
+plugin: 'block_content:de9351da-3424-4401-ba46-64709a9f12d4'
+settings:
+  id: 'block_content:de9351da-3424-4401-ba46-64709a9f12d4'
+  label: 'CTA: Blog'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /blog
+    negate: false
+    context_mapping: {  }

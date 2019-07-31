@@ -1,4 +1,4 @@
-uuid: 95db6512-078c-4be3-9890-4e7a542b2aa2
+uuid: 835ff180-73bd-4747-a230-39a1f5a1cbbb
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   theme:
     - patternlab
 _core:
-  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+  default_config_hash: v7KFIDH8j-qPjNob720cZ-oRgW53DIyA0kQE9nxmVDA
 id: patternlab_branding
 theme: patternlab
-region: header
-weight: -6
+region: navbar_branding
+weight: 0
 provider: null
 plugin: system_branding_block
 settings:
@@ -19,7 +19,7 @@ settings:
   label: 'Site branding'
   provider: system
   label_display: '0'
-  use_site_logo: true
+  use_site_logo: false
   use_site_name: true
-  use_site_slogan: true
+  use_site_slogan: false
 visibility: {  }

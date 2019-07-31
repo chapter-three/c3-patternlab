@@ -1,0 +1,20 @@
+uuid: a2ad3ba5-76fa-4532-bab9-64cfc2c436ca
+langcode: en
+status: true
+dependencies:
+  theme:
+    - patternlab
+_core:
+  default_config_hash: yCyzzsx2OKkWq9faq1WSuydGZzvUy-D3zDd7kGm5wzg
+id: patternlab_actions
+theme: patternlab
+region: tasks
+weight: 1
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
