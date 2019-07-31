@@ -1,0 +1,106 @@
+{# Classes for page wrapper. #}
+{% set classes = [
+  'page',
+]|merge(classes|default([])) %}
+
+{% set main_attributes = create_attribute() %}
+{% set main_classes = [
+  'main'
+]|merge(main_classes|default([])) %}
+
+<div{{ attributes.addClass(classes) }}>
+
+  <div class="page__navbar">
+    {{ page.navbar_branding }}
+    {{ page.navbar_left }}
+    {{ page.navbar_right }}
+  </div>
+
+  {% if page.breadcrumbs %}
+    <nav aria-label="breadcrumb" class="page__breadcrumbs">
+      <div class="container">
+        {{ page.breadcrumbs }}
+      </div>
+    </nav>
+  {% endif %}
+
+  {% if page.header %}
+    <header class="page__header">
+      {# If field_header has a value, it should replace the title block.#}
+      {% if node.field_header.value %}
+        {{ page.header|without('patternlab_title') }}
+      {% else %}
+        {{ page.header }}
+      {% endif %}
+    </header>
+  {% endif %}
+
+  {# If field_header has a value, the tabs will print in the node template.#}
+  {% if page.tasks|render and not node.field_header.value %}
+    <div class="page__tasks">
+      <div class="container">
+        {{ page.tasks }}
+      </div>
+    </div>
+  {% endif %}
+
+  {% if page.content_above %}
+    <div class="page__content-above">
+      <div class="container">
+        {{ page.content_above }}
+      </div>
+    </div>
+  {% endif %}
+
+  <main{{ main_attributes.addClass(main_classes) }} role="main">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+    {% block main %}
+      <div class="page__content">
+        {{ page.content }}
+      </div>
+
+      {% if page.sidebar_first %}
+        <aside class="page__sidebar-first sidebar sidebar-first">
+          {{ page.sidebar_first }}
+        </aside>
+      {% endif %}
+
+      {% if page.sidebar_second %}
+        <aside class="page__sidebar-second sidebar sidebar-second">
+          {{ page.sidebar_second }}
+        </aside>
+      {% endif %}
+    {% endblock %}
+  </main>
+
+  {% if page.content_below %}
+    <div class="page__content-below">
+      <div class="container-fluid">
+        {{ page.content_below }}
+      </div>
+    </div>
+  {% endif %}
+
+  {% if page.footer or page.copyright %}
+    <footer class="page__footer">
+
+      {% if page.footer %}
+        <div class="footer">
+          <div class="container">
+            {{ page.footer }}
+          </div>
+        </div>
+      {% endif %}
+
+      {% if page.copyright %}
+        <div class="copyright">
+          <div class="container">
+            {{ page.copyright }}
+          </div>
+        </div>
+      {% endif %}
+
+    </footer>
+  {% endif %}
+
+</div>
