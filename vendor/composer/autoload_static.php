@@ -18,6 +18,7 @@ class ComposerStaticInite0cac785a36f5c26069b0459ffb026df
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '5a12a5271c58108e0aa33355e6ac54ea' => __DIR__ . '/..' . '/drupal/console-core/src/functions.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
+        '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -83,10 +84,12 @@ class ComposerStaticInite0cac785a36f5c26069b0459ffb026df
             'Symfony\\Cmf\\Component\\Routing\\' => 30,
             'Symfony\\Bridge\\PsrHttpMessage\\' => 30,
             'Stecman\\Component\\Symfony\\Console\\BashCompletion\\' => 49,
+            'Spatie\\YamlFrontMatter\\' => 23,
         ),
         'P' => 
         array (
             'Psy\\' => 4,
+            'Psr\\SimpleCache\\' => 16,
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
@@ -94,12 +97,18 @@ class ComposerStaticInite0cac785a36f5c26069b0459ffb026df
         ),
         'M' => 
         array (
+            'Michelf\\' => 8,
             'Masterminds\\' => 12,
         ),
         'J' => 
         array (
             'JakubOnderka\\PhpConsoleHighlighter\\' => 35,
             'JakubOnderka\\PhpConsoleColor\\' => 29,
+        ),
+        'I' => 
+        array (
+            'Illuminate\\Support\\' => 19,
+            'Illuminate\\Contracts\\' => 21,
         ),
         'G' => 
         array (
@@ -113,6 +122,7 @@ class ComposerStaticInite0cac785a36f5c26069b0459ffb026df
         ),
         'D' => 
         array (
+            'Drupal\\ui_patterns\\' => 19,
             'Drupal\\Driver\\' => 14,
             'Drupal\\Core\\' => 12,
             'Drupal\\Console\\Core\\' => 20,
@@ -297,9 +307,17 @@ class ComposerStaticInite0cac785a36f5c26069b0459ffb026df
         array (
             0 => __DIR__ . '/..' . '/stecman/symfony-console-completion/src',
         ),
+        'Spatie\\YamlFrontMatter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spatie/yaml-front-matter/src',
+        ),
         'Psy\\' => 
         array (
             0 => __DIR__ . '/..' . '/psy/psysh/src',
+        ),
+        'Psr\\SimpleCache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
         ),
         'Psr\\Log\\' => 
         array (
@@ -317,6 +335,10 @@ class ComposerStaticInite0cac785a36f5c26069b0459ffb026df
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
+        'Michelf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/michelf/php-markdown/Michelf',
+        ),
         'Masterminds\\' => 
         array (
             0 => __DIR__ . '/..' . '/masterminds/html5/src',
@@ -328,6 +350,14 @@ class ComposerStaticInite0cac785a36f5c26069b0459ffb026df
         'JakubOnderka\\PhpConsoleColor\\' => 
         array (
             0 => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src',
+        ),
+        'Illuminate\\Support\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/support',
+        ),
+        'Illuminate\\Contracts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/contracts',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (
@@ -344,6 +374,10 @@ class ComposerStaticInite0cac785a36f5c26069b0459ffb026df
         'Egulias\\EmailValidator\\' => 
         array (
             0 => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator',
+        ),
+        'Drupal\\ui_patterns\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src',
         ),
         'Drupal\\Driver\\' => 
         array (
@@ -407,7 +441,18 @@ class ComposerStaticInite0cac785a36f5c26069b0459ffb026df
         ),
     );
 
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/..' . '/nesbot/carbon/src',
+    );
+
     public static $prefixesPsr0 = array (
+        'U' => 
+        array (
+            'UpdateHelper\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/kylekatarnls/update-helper/src',
+            ),
+        ),
         'T' => 
         array (
             'Twig_' => 
@@ -584,6 +629,13 @@ class ComposerStaticInite0cac785a36f5c26069b0459ffb026df
         'Asm89\\Stack\\CorsService' => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack/CorsService.php',
         'AssertionError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
         'Brumann\\Polyfill\\Unserialize' => __DIR__ . '/..' . '/brumann/polyfill-unserialize/src/Unserialize.php',
+        'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
+        'Carbon\\CarbonInterval' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
+        'Carbon\\CarbonPeriod' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonPeriod.php',
+        'Carbon\\Exceptions\\InvalidDateException' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Exceptions/InvalidDateException.php',
+        'Carbon\\Laravel\\ServiceProvider' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Laravel/ServiceProvider.php',
+        'Carbon\\Translator' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Translator.php',
+        'Carbon\\Upgrade' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Upgrade.php',
         'Composer\\Installers\\AglInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/AglInstaller.php',
         'Composer\\Installers\\AimeosInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/AimeosInstaller.php',
         'Composer\\Installers\\AnnotateCmsInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/AnnotateCmsInstaller.php',
@@ -2895,6 +2947,33 @@ class ComposerStaticInite0cac785a36f5c26069b0459ffb026df
         'Drupal\\Tests\\Driver\\Drupal7FieldHandlerTest' => __DIR__ . '/..' . '/drupal/drupal-driver/tests/Drupal/Tests/Driver/Drupal7FieldHandlerTest.php',
         'Drupal\\Tests\\Driver\\DrushDriverTest' => __DIR__ . '/..' . '/drupal/drupal-driver/tests/Drupal/Tests/Driver/DrushDriverTest.php',
         'Drupal\\Tests\\Driver\\FieldHandlerAbstractTest' => __DIR__ . '/..' . '/drupal/drupal-driver/tests/Drupal/Tests/Driver/FieldHandlerAbstractTest.php',
+        'Drupal\\ui_patterns\\Annotation\\UiPattern' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Annotation/UiPattern.php',
+        'Drupal\\ui_patterns\\Annotation\\UiPatternsSource' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Annotation/UiPatternsSource.php',
+        'Drupal\\ui_patterns\\Definition\\ArrayAccessDefinitionTrait' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Definition/ArrayAccessDefinitionTrait.php',
+        'Drupal\\ui_patterns\\Definition\\PatternDefinition' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Definition/PatternDefinition.php',
+        'Drupal\\ui_patterns\\Definition\\PatternDefinitionField' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Definition/PatternDefinitionField.php',
+        'Drupal\\ui_patterns\\Definition\\PatternDefinitionVariant' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Definition/PatternDefinitionVariant.php',
+        'Drupal\\ui_patterns\\Definition\\PatternSourceField' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Definition/PatternSourceField.php',
+        'Drupal\\ui_patterns\\Element\\Pattern' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Element/Pattern.php',
+        'Drupal\\ui_patterns\\Element\\PatternContext' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Element/PatternContext.php',
+        'Drupal\\ui_patterns\\Element\\PatternPreview' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Element/PatternPreview.php',
+        'Drupal\\ui_patterns\\Exception\\PatternDefinitionException' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Exception/PatternDefinitionException.php',
+        'Drupal\\ui_patterns\\Exception\\PatternRenderException' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Exception/PatternRenderException.php',
+        'Drupal\\ui_patterns\\Form\\PatternDisplayFormTrait' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Form/PatternDisplayFormTrait.php',
+        'Drupal\\ui_patterns\\Plugin\\Deriver\\AbstractPatternsDeriver' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Plugin/Deriver/AbstractPatternsDeriver.php',
+        'Drupal\\ui_patterns\\Plugin\\Deriver\\AbstractYamlPatternsDeriver' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Plugin/Deriver/AbstractYamlPatternsDeriver.php',
+        'Drupal\\ui_patterns\\Plugin\\Deriver\\PatternsDeriverInterface' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Plugin/Deriver/PatternsDeriverInterface.php',
+        'Drupal\\ui_patterns\\Plugin\\Deriver\\YamlPatternsDeriverInterface' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Plugin/Deriver/YamlPatternsDeriverInterface.php',
+        'Drupal\\ui_patterns\\Plugin\\PatternBase' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Plugin/PatternBase.php',
+        'Drupal\\ui_patterns\\Plugin\\PatternInterface' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Plugin/PatternInterface.php',
+        'Drupal\\ui_patterns\\Plugin\\PatternSourceBase' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Plugin/PatternSourceBase.php',
+        'Drupal\\ui_patterns\\Plugin\\PatternSourceInterface' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Plugin/PatternSourceInterface.php',
+        'Drupal\\ui_patterns\\Plugin\\UiPatterns\\Source\\FieldSource' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Plugin/UiPatterns/Source/FieldSource.php',
+        'Drupal\\ui_patterns\\Template\\TwigExtension' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Template/TwigExtension.php',
+        'Drupal\\ui_patterns\\TypedData\\PatternDataDefinition' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/TypedData/PatternDataDefinition.php',
+        'Drupal\\ui_patterns\\UiPatterns' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/UiPatterns.php',
+        'Drupal\\ui_patterns\\UiPatternsManager' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/UiPatternsManager.php',
+        'Drupal\\ui_patterns\\UiPatternsSourceManager' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/UiPatternsSourceManager.php',
         'EasyRdf_Collection' => __DIR__ . '/..' . '/easyrdf/easyrdf/lib/EasyRdf/Collection.php',
         'EasyRdf_Container' => __DIR__ . '/..' . '/easyrdf/easyrdf/lib/EasyRdf/Container.php',
         'EasyRdf_Exception' => __DIR__ . '/..' . '/easyrdf/easyrdf/lib/EasyRdf/Exception.php',
@@ -3076,9 +3155,161 @@ class ComposerStaticInite0cac785a36f5c26069b0459ffb026df
         'GuzzleHttp\\RetryMiddleware' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/RetryMiddleware.php',
         'GuzzleHttp\\TransferStats' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/TransferStats.php',
         'GuzzleHttp\\UriTemplate' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/UriTemplate.php',
+        'Illuminate\\Contracts\\Auth\\Access\\Authorizable' => __DIR__ . '/..' . '/illuminate/contracts/Auth/Access/Authorizable.php',
+        'Illuminate\\Contracts\\Auth\\Access\\Gate' => __DIR__ . '/..' . '/illuminate/contracts/Auth/Access/Gate.php',
+        'Illuminate\\Contracts\\Auth\\Authenticatable' => __DIR__ . '/..' . '/illuminate/contracts/Auth/Authenticatable.php',
+        'Illuminate\\Contracts\\Auth\\CanResetPassword' => __DIR__ . '/..' . '/illuminate/contracts/Auth/CanResetPassword.php',
+        'Illuminate\\Contracts\\Auth\\Factory' => __DIR__ . '/..' . '/illuminate/contracts/Auth/Factory.php',
+        'Illuminate\\Contracts\\Auth\\Guard' => __DIR__ . '/..' . '/illuminate/contracts/Auth/Guard.php',
+        'Illuminate\\Contracts\\Auth\\PasswordBroker' => __DIR__ . '/..' . '/illuminate/contracts/Auth/PasswordBroker.php',
+        'Illuminate\\Contracts\\Auth\\PasswordBrokerFactory' => __DIR__ . '/..' . '/illuminate/contracts/Auth/PasswordBrokerFactory.php',
+        'Illuminate\\Contracts\\Auth\\StatefulGuard' => __DIR__ . '/..' . '/illuminate/contracts/Auth/StatefulGuard.php',
+        'Illuminate\\Contracts\\Auth\\SupportsBasicAuth' => __DIR__ . '/..' . '/illuminate/contracts/Auth/SupportsBasicAuth.php',
+        'Illuminate\\Contracts\\Auth\\UserProvider' => __DIR__ . '/..' . '/illuminate/contracts/Auth/UserProvider.php',
+        'Illuminate\\Contracts\\Broadcasting\\Broadcaster' => __DIR__ . '/..' . '/illuminate/contracts/Broadcasting/Broadcaster.php',
+        'Illuminate\\Contracts\\Broadcasting\\Factory' => __DIR__ . '/..' . '/illuminate/contracts/Broadcasting/Factory.php',
+        'Illuminate\\Contracts\\Broadcasting\\ShouldBroadcast' => __DIR__ . '/..' . '/illuminate/contracts/Broadcasting/ShouldBroadcast.php',
+        'Illuminate\\Contracts\\Broadcasting\\ShouldBroadcastNow' => __DIR__ . '/..' . '/illuminate/contracts/Broadcasting/ShouldBroadcastNow.php',
+        'Illuminate\\Contracts\\Bus\\Dispatcher' => __DIR__ . '/..' . '/illuminate/contracts/Bus/Dispatcher.php',
+        'Illuminate\\Contracts\\Bus\\QueueingDispatcher' => __DIR__ . '/..' . '/illuminate/contracts/Bus/QueueingDispatcher.php',
+        'Illuminate\\Contracts\\Cache\\Factory' => __DIR__ . '/..' . '/illuminate/contracts/Cache/Factory.php',
+        'Illuminate\\Contracts\\Cache\\Lock' => __DIR__ . '/..' . '/illuminate/contracts/Cache/Lock.php',
+        'Illuminate\\Contracts\\Cache\\LockProvider' => __DIR__ . '/..' . '/illuminate/contracts/Cache/LockProvider.php',
+        'Illuminate\\Contracts\\Cache\\LockTimeoutException' => __DIR__ . '/..' . '/illuminate/contracts/Cache/LockTimeoutException.php',
+        'Illuminate\\Contracts\\Cache\\Repository' => __DIR__ . '/..' . '/illuminate/contracts/Cache/Repository.php',
+        'Illuminate\\Contracts\\Cache\\Store' => __DIR__ . '/..' . '/illuminate/contracts/Cache/Store.php',
+        'Illuminate\\Contracts\\Config\\Repository' => __DIR__ . '/..' . '/illuminate/contracts/Config/Repository.php',
+        'Illuminate\\Contracts\\Console\\Application' => __DIR__ . '/..' . '/illuminate/contracts/Console/Application.php',
+        'Illuminate\\Contracts\\Console\\Kernel' => __DIR__ . '/..' . '/illuminate/contracts/Console/Kernel.php',
+        'Illuminate\\Contracts\\Container\\BindingResolutionException' => __DIR__ . '/..' . '/illuminate/contracts/Container/BindingResolutionException.php',
+        'Illuminate\\Contracts\\Container\\Container' => __DIR__ . '/..' . '/illuminate/contracts/Container/Container.php',
+        'Illuminate\\Contracts\\Container\\ContextualBindingBuilder' => __DIR__ . '/..' . '/illuminate/contracts/Container/ContextualBindingBuilder.php',
+        'Illuminate\\Contracts\\Cookie\\Factory' => __DIR__ . '/..' . '/illuminate/contracts/Cookie/Factory.php',
+        'Illuminate\\Contracts\\Cookie\\QueueingFactory' => __DIR__ . '/..' . '/illuminate/contracts/Cookie/QueueingFactory.php',
+        'Illuminate\\Contracts\\Database\\ModelIdentifier' => __DIR__ . '/..' . '/illuminate/contracts/Database/ModelIdentifier.php',
+        'Illuminate\\Contracts\\Debug\\ExceptionHandler' => __DIR__ . '/..' . '/illuminate/contracts/Debug/ExceptionHandler.php',
+        'Illuminate\\Contracts\\Encryption\\DecryptException' => __DIR__ . '/..' . '/illuminate/contracts/Encryption/DecryptException.php',
+        'Illuminate\\Contracts\\Encryption\\EncryptException' => __DIR__ . '/..' . '/illuminate/contracts/Encryption/EncryptException.php',
+        'Illuminate\\Contracts\\Encryption\\Encrypter' => __DIR__ . '/..' . '/illuminate/contracts/Encryption/Encrypter.php',
+        'Illuminate\\Contracts\\Events\\Dispatcher' => __DIR__ . '/..' . '/illuminate/contracts/Events/Dispatcher.php',
+        'Illuminate\\Contracts\\Filesystem\\Cloud' => __DIR__ . '/..' . '/illuminate/contracts/Filesystem/Cloud.php',
+        'Illuminate\\Contracts\\Filesystem\\Factory' => __DIR__ . '/..' . '/illuminate/contracts/Filesystem/Factory.php',
+        'Illuminate\\Contracts\\Filesystem\\FileNotFoundException' => __DIR__ . '/..' . '/illuminate/contracts/Filesystem/FileNotFoundException.php',
+        'Illuminate\\Contracts\\Filesystem\\Filesystem' => __DIR__ . '/..' . '/illuminate/contracts/Filesystem/Filesystem.php',
+        'Illuminate\\Contracts\\Foundation\\Application' => __DIR__ . '/..' . '/illuminate/contracts/Foundation/Application.php',
+        'Illuminate\\Contracts\\Hashing\\Hasher' => __DIR__ . '/..' . '/illuminate/contracts/Hashing/Hasher.php',
+        'Illuminate\\Contracts\\Http\\Kernel' => __DIR__ . '/..' . '/illuminate/contracts/Http/Kernel.php',
+        'Illuminate\\Contracts\\Logging\\Log' => __DIR__ . '/..' . '/illuminate/contracts/Logging/Log.php',
+        'Illuminate\\Contracts\\Mail\\MailQueue' => __DIR__ . '/..' . '/illuminate/contracts/Mail/MailQueue.php',
+        'Illuminate\\Contracts\\Mail\\Mailable' => __DIR__ . '/..' . '/illuminate/contracts/Mail/Mailable.php',
+        'Illuminate\\Contracts\\Mail\\Mailer' => __DIR__ . '/..' . '/illuminate/contracts/Mail/Mailer.php',
+        'Illuminate\\Contracts\\Notifications\\Dispatcher' => __DIR__ . '/..' . '/illuminate/contracts/Notifications/Dispatcher.php',
+        'Illuminate\\Contracts\\Notifications\\Factory' => __DIR__ . '/..' . '/illuminate/contracts/Notifications/Factory.php',
+        'Illuminate\\Contracts\\Pagination\\LengthAwarePaginator' => __DIR__ . '/..' . '/illuminate/contracts/Pagination/LengthAwarePaginator.php',
+        'Illuminate\\Contracts\\Pagination\\Paginator' => __DIR__ . '/..' . '/illuminate/contracts/Pagination/Paginator.php',
+        'Illuminate\\Contracts\\Pipeline\\Hub' => __DIR__ . '/..' . '/illuminate/contracts/Pipeline/Hub.php',
+        'Illuminate\\Contracts\\Pipeline\\Pipeline' => __DIR__ . '/..' . '/illuminate/contracts/Pipeline/Pipeline.php',
+        'Illuminate\\Contracts\\Queue\\EntityNotFoundException' => __DIR__ . '/..' . '/illuminate/contracts/Queue/EntityNotFoundException.php',
+        'Illuminate\\Contracts\\Queue\\EntityResolver' => __DIR__ . '/..' . '/illuminate/contracts/Queue/EntityResolver.php',
+        'Illuminate\\Contracts\\Queue\\Factory' => __DIR__ . '/..' . '/illuminate/contracts/Queue/Factory.php',
+        'Illuminate\\Contracts\\Queue\\Job' => __DIR__ . '/..' . '/illuminate/contracts/Queue/Job.php',
+        'Illuminate\\Contracts\\Queue\\Monitor' => __DIR__ . '/..' . '/illuminate/contracts/Queue/Monitor.php',
+        'Illuminate\\Contracts\\Queue\\Queue' => __DIR__ . '/..' . '/illuminate/contracts/Queue/Queue.php',
+        'Illuminate\\Contracts\\Queue\\QueueableCollection' => __DIR__ . '/..' . '/illuminate/contracts/Queue/QueueableCollection.php',
+        'Illuminate\\Contracts\\Queue\\QueueableEntity' => __DIR__ . '/..' . '/illuminate/contracts/Queue/QueueableEntity.php',
+        'Illuminate\\Contracts\\Queue\\ShouldQueue' => __DIR__ . '/..' . '/illuminate/contracts/Queue/ShouldQueue.php',
+        'Illuminate\\Contracts\\Redis\\Factory' => __DIR__ . '/..' . '/illuminate/contracts/Redis/Factory.php',
+        'Illuminate\\Contracts\\Redis\\LimiterTimeoutException' => __DIR__ . '/..' . '/illuminate/contracts/Redis/LimiterTimeoutException.php',
+        'Illuminate\\Contracts\\Routing\\BindingRegistrar' => __DIR__ . '/..' . '/illuminate/contracts/Routing/BindingRegistrar.php',
+        'Illuminate\\Contracts\\Routing\\Registrar' => __DIR__ . '/..' . '/illuminate/contracts/Routing/Registrar.php',
+        'Illuminate\\Contracts\\Routing\\ResponseFactory' => __DIR__ . '/..' . '/illuminate/contracts/Routing/ResponseFactory.php',
+        'Illuminate\\Contracts\\Routing\\UrlGenerator' => __DIR__ . '/..' . '/illuminate/contracts/Routing/UrlGenerator.php',
+        'Illuminate\\Contracts\\Routing\\UrlRoutable' => __DIR__ . '/..' . '/illuminate/contracts/Routing/UrlRoutable.php',
+        'Illuminate\\Contracts\\Session\\Session' => __DIR__ . '/..' . '/illuminate/contracts/Session/Session.php',
+        'Illuminate\\Contracts\\Support\\Arrayable' => __DIR__ . '/..' . '/illuminate/contracts/Support/Arrayable.php',
+        'Illuminate\\Contracts\\Support\\Htmlable' => __DIR__ . '/..' . '/illuminate/contracts/Support/Htmlable.php',
+        'Illuminate\\Contracts\\Support\\Jsonable' => __DIR__ . '/..' . '/illuminate/contracts/Support/Jsonable.php',
+        'Illuminate\\Contracts\\Support\\MessageBag' => __DIR__ . '/..' . '/illuminate/contracts/Support/MessageBag.php',
+        'Illuminate\\Contracts\\Support\\MessageProvider' => __DIR__ . '/..' . '/illuminate/contracts/Support/MessageProvider.php',
+        'Illuminate\\Contracts\\Support\\Renderable' => __DIR__ . '/..' . '/illuminate/contracts/Support/Renderable.php',
+        'Illuminate\\Contracts\\Support\\Responsable' => __DIR__ . '/..' . '/illuminate/contracts/Support/Responsable.php',
+        'Illuminate\\Contracts\\Translation\\Loader' => __DIR__ . '/..' . '/illuminate/contracts/Translation/Loader.php',
+        'Illuminate\\Contracts\\Translation\\Translator' => __DIR__ . '/..' . '/illuminate/contracts/Translation/Translator.php',
+        'Illuminate\\Contracts\\Validation\\Factory' => __DIR__ . '/..' . '/illuminate/contracts/Validation/Factory.php',
+        'Illuminate\\Contracts\\Validation\\ImplicitRule' => __DIR__ . '/..' . '/illuminate/contracts/Validation/ImplicitRule.php',
+        'Illuminate\\Contracts\\Validation\\Rule' => __DIR__ . '/..' . '/illuminate/contracts/Validation/Rule.php',
+        'Illuminate\\Contracts\\Validation\\ValidatesWhenResolved' => __DIR__ . '/..' . '/illuminate/contracts/Validation/ValidatesWhenResolved.php',
+        'Illuminate\\Contracts\\Validation\\Validator' => __DIR__ . '/..' . '/illuminate/contracts/Validation/Validator.php',
+        'Illuminate\\Contracts\\View\\Engine' => __DIR__ . '/..' . '/illuminate/contracts/View/Engine.php',
+        'Illuminate\\Contracts\\View\\Factory' => __DIR__ . '/..' . '/illuminate/contracts/View/Factory.php',
+        'Illuminate\\Contracts\\View\\View' => __DIR__ . '/..' . '/illuminate/contracts/View/View.php',
+        'Illuminate\\Support\\AggregateServiceProvider' => __DIR__ . '/..' . '/illuminate/support/AggregateServiceProvider.php',
+        'Illuminate\\Support\\Arr' => __DIR__ . '/..' . '/illuminate/support/Arr.php',
+        'Illuminate\\Support\\Carbon' => __DIR__ . '/..' . '/illuminate/support/Carbon.php',
+        'Illuminate\\Support\\Collection' => __DIR__ . '/..' . '/illuminate/support/Collection.php',
+        'Illuminate\\Support\\Composer' => __DIR__ . '/..' . '/illuminate/support/Composer.php',
+        'Illuminate\\Support\\Debug\\Dumper' => __DIR__ . '/..' . '/illuminate/support/Debug/Dumper.php',
+        'Illuminate\\Support\\Debug\\HtmlDumper' => __DIR__ . '/..' . '/illuminate/support/Debug/HtmlDumper.php',
+        'Illuminate\\Support\\Facades\\App' => __DIR__ . '/..' . '/illuminate/support/Facades/App.php',
+        'Illuminate\\Support\\Facades\\Artisan' => __DIR__ . '/..' . '/illuminate/support/Facades/Artisan.php',
+        'Illuminate\\Support\\Facades\\Auth' => __DIR__ . '/..' . '/illuminate/support/Facades/Auth.php',
+        'Illuminate\\Support\\Facades\\Blade' => __DIR__ . '/..' . '/illuminate/support/Facades/Blade.php',
+        'Illuminate\\Support\\Facades\\Broadcast' => __DIR__ . '/..' . '/illuminate/support/Facades/Broadcast.php',
+        'Illuminate\\Support\\Facades\\Bus' => __DIR__ . '/..' . '/illuminate/support/Facades/Bus.php',
+        'Illuminate\\Support\\Facades\\Cache' => __DIR__ . '/..' . '/illuminate/support/Facades/Cache.php',
+        'Illuminate\\Support\\Facades\\Config' => __DIR__ . '/..' . '/illuminate/support/Facades/Config.php',
+        'Illuminate\\Support\\Facades\\Cookie' => __DIR__ . '/..' . '/illuminate/support/Facades/Cookie.php',
+        'Illuminate\\Support\\Facades\\Crypt' => __DIR__ . '/..' . '/illuminate/support/Facades/Crypt.php',
+        'Illuminate\\Support\\Facades\\DB' => __DIR__ . '/..' . '/illuminate/support/Facades/DB.php',
+        'Illuminate\\Support\\Facades\\Event' => __DIR__ . '/..' . '/illuminate/support/Facades/Event.php',
+        'Illuminate\\Support\\Facades\\Facade' => __DIR__ . '/..' . '/illuminate/support/Facades/Facade.php',
+        'Illuminate\\Support\\Facades\\File' => __DIR__ . '/..' . '/illuminate/support/Facades/File.php',
+        'Illuminate\\Support\\Facades\\Gate' => __DIR__ . '/..' . '/illuminate/support/Facades/Gate.php',
+        'Illuminate\\Support\\Facades\\Hash' => __DIR__ . '/..' . '/illuminate/support/Facades/Hash.php',
+        'Illuminate\\Support\\Facades\\Input' => __DIR__ . '/..' . '/illuminate/support/Facades/Input.php',
+        'Illuminate\\Support\\Facades\\Lang' => __DIR__ . '/..' . '/illuminate/support/Facades/Lang.php',
+        'Illuminate\\Support\\Facades\\Log' => __DIR__ . '/..' . '/illuminate/support/Facades/Log.php',
+        'Illuminate\\Support\\Facades\\Mail' => __DIR__ . '/..' . '/illuminate/support/Facades/Mail.php',
+        'Illuminate\\Support\\Facades\\Notification' => __DIR__ . '/..' . '/illuminate/support/Facades/Notification.php',
+        'Illuminate\\Support\\Facades\\Password' => __DIR__ . '/..' . '/illuminate/support/Facades/Password.php',
+        'Illuminate\\Support\\Facades\\Queue' => __DIR__ . '/..' . '/illuminate/support/Facades/Queue.php',
+        'Illuminate\\Support\\Facades\\Redirect' => __DIR__ . '/..' . '/illuminate/support/Facades/Redirect.php',
+        'Illuminate\\Support\\Facades\\Redis' => __DIR__ . '/..' . '/illuminate/support/Facades/Redis.php',
+        'Illuminate\\Support\\Facades\\Request' => __DIR__ . '/..' . '/illuminate/support/Facades/Request.php',
+        'Illuminate\\Support\\Facades\\Response' => __DIR__ . '/..' . '/illuminate/support/Facades/Response.php',
+        'Illuminate\\Support\\Facades\\Route' => __DIR__ . '/..' . '/illuminate/support/Facades/Route.php',
+        'Illuminate\\Support\\Facades\\Schema' => __DIR__ . '/..' . '/illuminate/support/Facades/Schema.php',
+        'Illuminate\\Support\\Facades\\Session' => __DIR__ . '/..' . '/illuminate/support/Facades/Session.php',
+        'Illuminate\\Support\\Facades\\Storage' => __DIR__ . '/..' . '/illuminate/support/Facades/Storage.php',
+        'Illuminate\\Support\\Facades\\URL' => __DIR__ . '/..' . '/illuminate/support/Facades/URL.php',
+        'Illuminate\\Support\\Facades\\Validator' => __DIR__ . '/..' . '/illuminate/support/Facades/Validator.php',
+        'Illuminate\\Support\\Facades\\View' => __DIR__ . '/..' . '/illuminate/support/Facades/View.php',
+        'Illuminate\\Support\\Fluent' => __DIR__ . '/..' . '/illuminate/support/Fluent.php',
+        'Illuminate\\Support\\HigherOrderCollectionProxy' => __DIR__ . '/..' . '/illuminate/support/HigherOrderCollectionProxy.php',
+        'Illuminate\\Support\\HigherOrderTapProxy' => __DIR__ . '/..' . '/illuminate/support/HigherOrderTapProxy.php',
+        'Illuminate\\Support\\HtmlString' => __DIR__ . '/..' . '/illuminate/support/HtmlString.php',
+        'Illuminate\\Support\\InteractsWithTime' => __DIR__ . '/..' . '/illuminate/support/InteractsWithTime.php',
+        'Illuminate\\Support\\Manager' => __DIR__ . '/..' . '/illuminate/support/Manager.php',
+        'Illuminate\\Support\\MessageBag' => __DIR__ . '/..' . '/illuminate/support/MessageBag.php',
+        'Illuminate\\Support\\NamespacedItemResolver' => __DIR__ . '/..' . '/illuminate/support/NamespacedItemResolver.php',
+        'Illuminate\\Support\\Optional' => __DIR__ . '/..' . '/illuminate/support/Optional.php',
+        'Illuminate\\Support\\Pluralizer' => __DIR__ . '/..' . '/illuminate/support/Pluralizer.php',
+        'Illuminate\\Support\\ProcessUtils' => __DIR__ . '/..' . '/illuminate/support/ProcessUtils.php',
+        'Illuminate\\Support\\ServiceProvider' => __DIR__ . '/..' . '/illuminate/support/ServiceProvider.php',
+        'Illuminate\\Support\\Str' => __DIR__ . '/..' . '/illuminate/support/Str.php',
+        'Illuminate\\Support\\Testing\\Fakes\\BusFake' => __DIR__ . '/..' . '/illuminate/support/Testing/Fakes/BusFake.php',
+        'Illuminate\\Support\\Testing\\Fakes\\EventFake' => __DIR__ . '/..' . '/illuminate/support/Testing/Fakes/EventFake.php',
+        'Illuminate\\Support\\Testing\\Fakes\\MailFake' => __DIR__ . '/..' . '/illuminate/support/Testing/Fakes/MailFake.php',
+        'Illuminate\\Support\\Testing\\Fakes\\NotificationFake' => __DIR__ . '/..' . '/illuminate/support/Testing/Fakes/NotificationFake.php',
+        'Illuminate\\Support\\Testing\\Fakes\\PendingMailFake' => __DIR__ . '/..' . '/illuminate/support/Testing/Fakes/PendingMailFake.php',
+        'Illuminate\\Support\\Testing\\Fakes\\QueueFake' => __DIR__ . '/..' . '/illuminate/support/Testing/Fakes/QueueFake.php',
+        'Illuminate\\Support\\Traits\\CapsuleManagerTrait' => __DIR__ . '/..' . '/illuminate/support/Traits/CapsuleManagerTrait.php',
+        'Illuminate\\Support\\Traits\\Macroable' => __DIR__ . '/..' . '/illuminate/support/Traits/Macroable.php',
+        'Illuminate\\Support\\ViewErrorBag' => __DIR__ . '/..' . '/illuminate/support/ViewErrorBag.php',
         'JakubOnderka\\PhpConsoleColor\\ConsoleColor' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/ConsoleColor.php',
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/Highlighter.php',
+        'JsonSerializable' => __DIR__ . '/..' . '/nesbot/carbon/src/JsonSerializable.php',
         'Masterminds\\HTML5' => __DIR__ . '/..' . '/masterminds/html5/src/HTML5.php',
         'Masterminds\\HTML5\\Elements' => __DIR__ . '/..' . '/masterminds/html5/src/HTML5/Elements.php',
         'Masterminds\\HTML5\\Entities' => __DIR__ . '/..' . '/masterminds/html5/src/HTML5/Entities.php',
@@ -3099,6 +3330,9 @@ class ComposerStaticInite0cac785a36f5c26069b0459ffb026df
         'Masterminds\\HTML5\\Serializer\\OutputRules' => __DIR__ . '/..' . '/masterminds/html5/src/HTML5/Serializer/OutputRules.php',
         'Masterminds\\HTML5\\Serializer\\RulesInterface' => __DIR__ . '/..' . '/masterminds/html5/src/HTML5/Serializer/RulesInterface.php',
         'Masterminds\\HTML5\\Serializer\\Traverser' => __DIR__ . '/..' . '/masterminds/html5/src/HTML5/Serializer/Traverser.php',
+        'Michelf\\Markdown' => __DIR__ . '/..' . '/michelf/php-markdown/Michelf/Markdown.php',
+        'Michelf\\MarkdownExtra' => __DIR__ . '/..' . '/michelf/php-markdown/Michelf/MarkdownExtra.php',
+        'Michelf\\MarkdownInterface' => __DIR__ . '/..' . '/michelf/php-markdown/Michelf/MarkdownInterface.php',
         'OS_Guess' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/OS/Guess.php',
         'PEAR' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/PEAR.php',
         'PEAR_Error' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/PEAR.php',
@@ -3346,6 +3580,9 @@ class ComposerStaticInite0cac785a36f5c26069b0459ffb026df
         'Psr\\Log\\NullLogger' => __DIR__ . '/..' . '/psr/log/Psr/Log/NullLogger.php',
         'Psr\\Log\\Test\\DummyTest' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/LoggerInterfaceTest.php',
         'Psr\\Log\\Test\\LoggerInterfaceTest' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/LoggerInterfaceTest.php',
+        'Psr\\SimpleCache\\CacheException' => __DIR__ . '/..' . '/psr/simple-cache/src/CacheException.php',
+        'Psr\\SimpleCache\\CacheInterface' => __DIR__ . '/..' . '/psr/simple-cache/src/CacheInterface.php',
+        'Psr\\SimpleCache\\InvalidArgumentException' => __DIR__ . '/..' . '/psr/simple-cache/src/InvalidArgumentException.php',
         'Psy\\CodeCleaner' => __DIR__ . '/..' . '/psy/psysh/src/CodeCleaner.php',
         'Psy\\CodeCleaner\\AbstractClassPass' => __DIR__ . '/..' . '/psy/psysh/src/CodeCleaner/AbstractClassPass.php',
         'Psy\\CodeCleaner\\AssignThisVariablePass' => __DIR__ . '/..' . '/psy/psysh/src/CodeCleaner/AssignThisVariablePass.php',
@@ -3485,6 +3722,8 @@ class ComposerStaticInite0cac785a36f5c26069b0459ffb026df
         'Psy\\VersionUpdater\\IntervalChecker' => __DIR__ . '/..' . '/psy/psysh/src/VersionUpdater/IntervalChecker.php',
         'Psy\\VersionUpdater\\NoopChecker' => __DIR__ . '/..' . '/psy/psysh/src/VersionUpdater/NoopChecker.php',
         'SessionUpdateTimestampHandlerInterface' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/SessionUpdateTimestampHandlerInterface.php',
+        'Spatie\\YamlFrontMatter\\Document' => __DIR__ . '/..' . '/spatie/yaml-front-matter/src/Document.php',
+        'Spatie\\YamlFrontMatter\\YamlFrontMatter' => __DIR__ . '/..' . '/spatie/yaml-front-matter/src/YamlFrontMatter.php',
         'Stack\\Builder' => __DIR__ . '/..' . '/stack/builder/src/Stack/Builder.php',
         'Stack\\StackedHttpKernel' => __DIR__ . '/..' . '/stack/builder/src/Stack/StackedHttpKernel.php',
         'Stecman\\Component\\Symfony\\Console\\BashCompletion\\Completion' => __DIR__ . '/..' . '/stecman/symfony-console-completion/src/Completion.php',
@@ -5026,6 +5265,10 @@ class ComposerStaticInite0cac785a36f5c26069b0459ffb026df
         'Twig_Util_DeprecationCollector' => __DIR__ . '/..' . '/twig/twig/lib/Twig/Util/DeprecationCollector.php',
         'Twig_Util_TemplateDirIterator' => __DIR__ . '/..' . '/twig/twig/lib/Twig/Util/TemplateDirIterator.php',
         'TypeError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/TypeError.php',
+        'UpdateHelper\\ComposerPlugin' => __DIR__ . '/..' . '/kylekatarnls/update-helper/src/UpdateHelper/ComposerPlugin.php',
+        'UpdateHelper\\NotUpdateInterfaceInstanceException' => __DIR__ . '/..' . '/kylekatarnls/update-helper/src/UpdateHelper/NotUpdateInterfaceInstanceException.php',
+        'UpdateHelper\\UpdateHelper' => __DIR__ . '/..' . '/kylekatarnls/update-helper/src/UpdateHelper/UpdateHelper.php',
+        'UpdateHelper\\UpdateHelperInterface' => __DIR__ . '/..' . '/kylekatarnls/update-helper/src/UpdateHelper/UpdateHelperInterface.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
         'Webmozart\\PathUtil\\Path' => __DIR__ . '/..' . '/webmozart/path-util/src/Path.php',
         'Webmozart\\PathUtil\\Url' => __DIR__ . '/..' . '/webmozart/path-util/src/Url.php',
@@ -5243,6 +5486,7 @@ class ComposerStaticInite0cac785a36f5c26069b0459ffb026df
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInite0cac785a36f5c26069b0459ffb026df::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInite0cac785a36f5c26069b0459ffb026df::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInite0cac785a36f5c26069b0459ffb026df::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInite0cac785a36f5c26069b0459ffb026df::$prefixesPsr0;
             $loader->fallbackDirsPsr0 = ComposerStaticInite0cac785a36f5c26069b0459ffb026df::$fallbackDirsPsr0;
             $loader->classMap = ComposerStaticInite0cac785a36f5c26069b0459ffb026df::$classMap;
