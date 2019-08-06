@@ -1,0 +1,173 @@
+
+
+
+/*
+ * Sticky footer
+ * -----------------------------------------------------------------------------
+ */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+/* Toolbar collapsed */
+body[style="padding-top: 39px;"] .page {
+  min-height: calc(100vh - 39px);
+}
+
+/* Toolbar expanded */
+body[style="padding-top: 79px;"] .page {
+  min-height: calc(100vh - 79px);
+}
+
+/*
+ * Layout
+ * -----------------------------------------------------------------------------
+ */
+
+.main,
+.page__tasks {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr 1.5rem;
+}
+
+.main > *,
+.page__tasks > * {
+  grid-column: 2;
+}
+
+
+/*
+ * Header + Footer
+ * -----------------------------------------------------------------------------
+ */
+
+.page__navbar,
+.page__footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page__navbar * a,
+.page__footer * a {
+  color: inherit;
+}
+
+/*
+ * Header
+ * -----------------------------------------------------------------------------
+ */
+.page__navbar {
+  background: #212121;
+  color: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+.page__navbar .region .block {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/*
+ * Footer
+ * -----------------------------------------------------------------------------
+ */
+
+.page__footer {
+  background: #444;
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 1rem;
+}
+
+.page__footer a:hover,
+.page__footer a:focus {
+  text-decoration: underline;
+}
+
+/*
+ * Site name
+ * -----------------------------------------------------------------------------
+ */
+
+.site-name {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 400;
+  padding-left: 1rem;
+}
+
+.site-name a {
+  text-decoration: none;
+}
+
+/*
+ * Menu
+ * -----------------------------------------------------------------------------
+ */
+
+ul.menu {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0;
+  margin: 0;
+}
+
+ul.menu li.menu-item {
+  padding: 0;
+  display: inline-flex;
+}
+
+ul.menu li:not(:first-child) {
+  margin-left: 0.5rem;
+}
+
+ul.menu a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+
+ul.menu a:first-child {
+  margin-left: 0;
+}
+
+ul.menu a.is-active {
+  color: inherit;
+}
+
+.page__navbar ul.menu a:hover,
+.page__navbar ul.menu a:focus {
+  background: #fff;
+  border-radius: 1em;
+  color: #000;
+}
+.page__navbar ul.menu a.is-active,
+.page__navbar ul.menu a.is-active:hover {
+  background: var(--color-blue);
+  border-radius: 1em;
+  color: #fff;
+}
+
+
+/*
+ * Page title
+ * -----------------------------------------------------------------------------
+ */
+
+.page-title {
+  background-color: var(--color-blue);
+  color: #fff;
+  font-weight: 300;
+  margin: 0;
+  padding: 1rem;
+}

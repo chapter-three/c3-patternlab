@@ -23,12 +23,6 @@ regions:
   copyright: Copyright
 
 component-libraries:
-  atoms:
+  pattern-lab:
     paths:
-      - ../../../libraries/pattern-lab/source/_patterns/00-atoms
-  molecules:
-    paths:
-      - ../../../libraries/pattern-lab/source/_patterns/01-molecules
-  organisms:
-    paths:
-      - ../../../libraries/pattern-lab/source/_patterns/02-organisms
+      - ../../../libraries/pattern-lab/source/_patterns/components

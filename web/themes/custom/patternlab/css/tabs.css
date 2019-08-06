@@ -1,0 +1,174 @@
+/*
+ * Tabs Common
+ * -----------------------------------------------------------------------------
+ */
+
+nav.tabs {
+  margin: 1rem 0;
+}
+
+.is-collapse-enabled .tabs,
+.is-horizontal .tabs {
+  clear: both;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.is-collapse-enabled .tabs:before,
+.is-horizontal .tabs:before {
+  border-bottom: 1px solid var(--color-gray-light);
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: 10;
+}
+
+.is-collapse-enabled .tabs {
+  max-height: 0;
+  overflow: hidden;
+  padding-top: 40px;
+}
+
+.is-collapse-enabled .tabs:before {
+  right: 60px;
+}
+
+.is-collapse-enabled .tabs.is-open::before {
+  display: none;
+}
+
+.tabs.is-open {
+  max-height: 999em;
+}
+
+.is-horizontal .tabs {
+  overflow: visible;
+  max-height: none !important;
+  padding-top: 0 !important;
+  border-bottom: 0;
+}
+
+.tabs .tabs__tab {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.is-collapse-enabled .tabs__tab.is-active {
+  position: absolute;
+  top: 0;
+  left: 0; /* LTR */
+  width: calc(100% - 60px);
+  z-index: 15;
+}
+
+.is-horizontal .tabs__tab {
+  float: left; /* LTR */
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+.is-horizontal .tabs__tab.is-active,
+.is-horizontal .tabs.tabs--primary .tabs__tab.is-active {
+  position: relative;
+  top: 0;
+  width: auto;
+}
+
+
+/**
+ * Tabs: Trigger
+ * -----------------------------------------------------------------------------
+ */
+
+.tabs__trigger,
+.is-horizontal .tabs__trigger {
+  display: none;
+}
+
+/* JS dependent styling */
+.is-collapse-enabled .tabs__trigger {
+  background-color: var(--color-blue);
+  border: 0;
+  color: #fff;
+  display: block;
+  height: 40px;
+  left: auto;
+  outline: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 60px;
+  z-index: 10;
+}
+
+
+/**
+ * Tabs: Primary
+ * -----------------------------------------------------------------------------
+ */
+
+.tabs--primary {
+  border-left: 1px solid var(--color-gray-light);
+  border-bottom: 1px solid var(--color-gray-light);
+  font-size: 0.875rem;
+  margin-top: 1.5rem;
+}
+
+.tabs--primary .tabs__tab {
+  margin: 0;
+}
+
+.tabs--primary a {
+  border: 1px solid var(--color-gray-light);
+  border-left: 0;
+  border-bottom: 0;
+  border-radius: 0;
+  background-color: var(--color-gray-lightest);
+  color: #000;
+  display: block;
+  padding: 0 1.85rem;
+  height: 40px;
+  line-height: 36px;
+  position: relative;
+  text-decoration: none;
+}
+
+.tabs--primary a:hover {
+  color: #666;
+  border-color: var(--color-gray-light);
+}
+
+.tabs--primary a.is-active {
+  background-color: #fff;
+  border-bottom-color: var(--color-blue);
+}
+
+.is-collapse-enabled .tabs--primary a {
+  border-right-color:var(--color-gray-light);
+}
+
+.is-horizontal .tabs--primary a {
+  border-bottom-color: var(--color-gray-light);
+}
+
+.is-horizontal .tabs--primary a.is-active:after {
+  content: '';
+  height: 4px;
+  background: var(--color-blue);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 16;
+}

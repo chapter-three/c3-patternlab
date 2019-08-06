@@ -2,4 +2,6 @@ base:
   css:
     theme:
       # ../../../libraries/pattern-lab/source/css/style.css: {}
-      style.css: {}
+      css/style.css: {}
+      css/tabs.css: {}
+      css/patterns.css: {}

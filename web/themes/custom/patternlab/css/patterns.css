@@ -1,0 +1,18 @@
+.pattern-preview {
+  margin: 1rem 0;
+}
+
+.pattern-preview table {
+  table-layout: fixed;
+}
+
+.pattern-preview__preview {
+  border: solid 2px #000;
+  margin: 2rem 0;
+}
+
+.pattern-preview__preview legend {
+  font-weight: 600;
+  padding: 0 0.5em;
+  text-transform: uppercase;
+}
