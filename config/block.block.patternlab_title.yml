@@ -2,8 +2,6 @@ uuid: de09a450-5b23-439e-af54-275e7386e0d0
 langcode: en
 status: true
 dependencies:
-  module:
-    - system
   theme:
     - patternlab
 _core:
@@ -19,9 +17,4 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility:
-  request_path:
-    id: request_path
-    pages: ''
-    negate: true
-    context_mapping: {  }
+visibility: {  }
