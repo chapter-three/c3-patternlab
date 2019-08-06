@@ -142,38 +142,10 @@
           ]
         },
         {
-          "id": "atoms",
+          "id": "pattern-lab",
           "recursive": true,
           "paths": [
-            "source/_patterns/00-atoms"
-          ]
-        },
-        {
-          "id": "molecules",
-          "recursive": true,
-          "paths": [
-            "source/_patterns/01-molecules"
-          ]
-        },
-        {
-          "id": "organisms",
-          "recursive": true,
-          "paths": [
-            "source/_patterns/02-organisms"
-          ]
-        },
-        {
-          "id": "templates",
-          "recursive": true,
-          "paths": [
-            "source/_patterns/03-templates"
-          ]
-        },
-        {
-          "id": "pages",
-          "recursive": true,
-          "paths": [
-            "source/_patterns/04-pages"
+            "source/_patterns/components"
           ]
         },
         {
