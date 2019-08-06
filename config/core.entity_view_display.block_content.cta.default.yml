@@ -7,6 +7,12 @@ dependencies:
     - field.field.block_content.cta.field_cta
   module:
     - entity_reference_revisions
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: sdFL96LWWwHcZgLc0l4scqD9bOrN-uLsv5UJZlsXPx0
 id: block_content.cta.default

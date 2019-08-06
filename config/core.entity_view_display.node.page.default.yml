@@ -8,8 +8,14 @@ dependencies:
     - node.type.page
   module:
     - entity_reference_revisions
+    - field_layout
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: 6NYgv978Fxi0ILOA5FnQd6lgBTT0OvhA4sxToIv1-cU
 id: node.page.default

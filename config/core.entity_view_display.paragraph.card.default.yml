@@ -9,8 +9,14 @@ dependencies:
     - field.field.paragraph.card.field_title
     - paragraphs.paragraphs_type.card
   module:
+    - field_layout
+    - layout_discovery
     - link
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: 5MsvtJZR3qB-T9xGBlBTUCKXOP5gi_7u3DfJzXxmYdQ
 id: paragraph.card.default

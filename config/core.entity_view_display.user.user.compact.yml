@@ -7,8 +7,14 @@ dependencies:
     - field.field.user.user.user_picture
     - image.style.1_1_48x48
   module:
+    - field_layout
     - image
+    - layout_discovery
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: T3stMqftYuil_qYnDcHEHyAqE-qv_Zv05s_FHr-mdqo
 id: user.user.compact

@@ -8,8 +8,14 @@ dependencies:
     - field.field.paragraph.title_bar.field_title
     - paragraphs.paragraphs_type.title_bar
   module:
+    - field_layout
     - fontawesome
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: hLd8HosG5w0PxLKtFKEOe8prIhx4Lef2cII55mMqHL8
 id: paragraph.title_bar.default

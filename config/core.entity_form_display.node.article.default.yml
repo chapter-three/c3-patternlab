@@ -10,9 +10,15 @@ dependencies:
     - node.type.article
   module:
     - comment
+    - field_layout
+    - layout_discovery
     - media_library
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: gJZ6Ds-LvZvjDUxdypLAGLFaagEi2qdpUvqQ77C4WgM
 id: node.article.default

@@ -10,9 +10,15 @@ dependencies:
     - field.field.paragraph.text_image.field_title
     - paragraphs.paragraphs_type.text_image
   module:
+    - field_layout
+    - layout_discovery
     - media_library
     - paragraphs
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: 9Xveg0nj5OFjwiXpEbdQ07iY5DqNvcXpCSjUcGAB1GI
 id: paragraph.text_image.default

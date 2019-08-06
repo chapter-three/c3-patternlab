@@ -9,7 +9,13 @@ dependencies:
     - field.field.paragraph.callout_group.field_title
     - paragraphs.paragraphs_type.callout_group
   module:
+    - field_layout
+    - layout_discovery
     - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: XKUl2Ah7gbEGO7QePTvSEMlomDbfD6K6_3OFarhGVYY
 id: paragraph.callout_group.default

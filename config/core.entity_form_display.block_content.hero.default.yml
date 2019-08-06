@@ -6,7 +6,13 @@ dependencies:
     - block_content.type.hero
     - field.field.block_content.hero.field_hero
   module:
+    - field_layout
+    - layout_discovery
     - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: 5a5c6WHSZAlX9TOFl1Dk0IHE4npKZduEg4FXrNxzSGU
 id: block_content.hero.default

@@ -10,9 +10,15 @@ dependencies:
     - field.field.paragraph.hero.field_title
     - paragraphs.paragraphs_type.hero
   module:
+    - field_layout
+    - layout_discovery
     - media_library
     - paragraphs
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: 0nn6LPtDcagtP_czNM96Lr3N1r6RlFw0S8i2Pj9i0SQ
 id: paragraph.hero.default

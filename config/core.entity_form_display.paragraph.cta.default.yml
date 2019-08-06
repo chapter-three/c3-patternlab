@@ -9,8 +9,14 @@ dependencies:
     - field.field.paragraph.cta.field_title
     - paragraphs.paragraphs_type.cta
   module:
+    - field_layout
+    - layout_discovery
     - paragraphs
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: vmV8R9VkRfcN8XGp4-N_70-sClOEpBYjdhlWVfM1wWc
 id: paragraph.cta.default

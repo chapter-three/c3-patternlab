@@ -7,6 +7,12 @@ dependencies:
     - paragraphs.paragraphs_type.button_group
   module:
     - entity_reference_revisions
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: SaCNzHEFHKrX7ktSyXYz2BJIqpDNgP0ssCZyggv2UB4
 id: paragraph.button_group.default

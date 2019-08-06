@@ -10,7 +10,13 @@ dependencies:
     - paragraphs.paragraphs_type.cta
   module:
     - entity_reference_revisions
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: ztgxjcCCkm46UHIoNzH5sE5TcomvjbAPqDbgly3WSgQ
 id: paragraph.cta.default

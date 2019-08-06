@@ -6,7 +6,13 @@ dependencies:
     - field.field.paragraph.text.field_text
     - paragraphs.paragraphs_type.text
   module:
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: HcHUk34p8VqAF8IVnIOT1SpvhP1C7UmNlFz8jHIDwE0
 id: paragraph.text.default

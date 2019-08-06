@@ -6,7 +6,13 @@ dependencies:
     - block_content.type.title_bar
     - field.field.block_content.title_bar.field_title_bar
   module:
+    - field_layout
+    - layout_discovery
     - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: GmyLYOaMt_1LW2X_n0OP_eF2ewTVLQ2GcbxvrrEGqcw
 id: block_content.title_bar.default

@@ -10,8 +10,14 @@ dependencies:
     - field.field.node.article.field_tags
     - node.type.article
   module:
+    - field_layout
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: uS2geodlkw8RnJN-JFieLhK8KnSEiIYkKyP4HImN_Hc
 id: node.article.teaser

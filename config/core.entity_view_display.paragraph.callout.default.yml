@@ -9,9 +9,15 @@ dependencies:
     - field.field.paragraph.callout.field_title
     - paragraphs.paragraphs_type.callout
   module:
+    - field_layout
     - fontawesome
+    - layout_discovery
     - link
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: FKAXYMAJp5NWkRdEbXbZD4khmlqvXkogoanGQzOXP98
 id: paragraph.callout.default

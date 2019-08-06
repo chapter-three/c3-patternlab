@@ -11,7 +11,13 @@ dependencies:
     - paragraphs.paragraphs_type.text_image
   module:
     - entity_reference_revisions
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: A5JjAAqxRwytJzmNwmJJKu4vmzh8xDupfbZmBZAH6zs
 id: paragraph.text_image.default

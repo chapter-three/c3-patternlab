@@ -7,6 +7,12 @@ dependencies:
     - field.field.block_content.title_bar.field_title_bar
   module:
     - entity_reference_revisions
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: gXroN9Lc2lKwSurqSNC8SeEhZcpNpeevMxs8pDMbjsM
 id: block_content.title_bar.default

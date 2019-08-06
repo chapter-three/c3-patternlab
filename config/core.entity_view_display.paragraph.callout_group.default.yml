@@ -10,6 +10,12 @@ dependencies:
     - paragraphs.paragraphs_type.callout_group
   module:
     - entity_reference_revisions
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: 6C9cODw_tI0CFF_iu611rxlyiolFrJELtu0LuIubDl0
 id: paragraph.callout_group.default

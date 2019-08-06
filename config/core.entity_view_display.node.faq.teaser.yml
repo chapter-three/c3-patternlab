@@ -7,8 +7,14 @@ dependencies:
     - field.field.node.faq.field_answer
     - node.type.faq
   module:
+    - field_layout
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: eb8oKTw6Ka78xR-3SDvwVj-E7Quo04j4S4ny0ihTs4g
 id: node.faq.teaser

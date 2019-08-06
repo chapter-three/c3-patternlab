@@ -8,7 +8,13 @@ dependencies:
     - field.field.node.landing.field_header
     - node.type.landing
   module:
+    - field_layout
+    - layout_discovery
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: L33Esp2dDV9V_9m3ZYEFmQKAyWfU3cqlggZ8UOfoRhU
 id: node.landing.teaser

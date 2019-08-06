@@ -7,7 +7,13 @@ dependencies:
     - field.field.paragraph.blockquote.field_text
     - paragraphs.paragraphs_type.blockquote
   module:
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: rxkwfxfvjWSstB7Vv5Mbm3LR9hWcffTv15N66dE4jTE
 id: paragraph.blockquote.default
