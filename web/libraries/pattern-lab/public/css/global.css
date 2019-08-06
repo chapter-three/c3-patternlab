@@ -1,6 +1,5 @@
 :root {
-  --color-blue: #3f51b5;
-  --color-blue-light: #5c6bc0;
+  --color-blue: #03a9f4;
   --color-gray: #58585;
   --color-gray-light: #ccc;
   --color-gray-lightest: #ededed;
@@ -31,7 +30,7 @@ img {
 }
 
 a {
-  color: var(--color-blue-light);
+  color: var(--color-blue);
 }
 
 h2 a,
