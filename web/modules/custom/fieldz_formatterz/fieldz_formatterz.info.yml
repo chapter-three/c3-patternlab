@@ -1,0 +1,6 @@
+name: Fieldz n' Formatterz
+type: module
+core: 8.x
+description: 'Extra fields/formatters'
+dependencies:
+  - extra_field
