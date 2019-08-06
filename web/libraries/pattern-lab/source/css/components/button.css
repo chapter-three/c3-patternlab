@@ -1,7 +1,7 @@
 .button {
-  background-color: var(--color-blue);
-  border: solid 1px var(--color-blue);
-  color: #fff;
+  background-color: var(--color-primary-accent-dark);
+  border: solid 1px var(--color-primary-accent-dark);
+  color: var(--color-primary-accent-light);
   display: inline-block;
   line-height: 1.1;
   margin: 0.5rem 0 0 0;
