@@ -8,13 +8,15 @@ dependencies:
     - paragraphs.paragraphs_type.button
   module:
     - field_layout
-    - layout_discovery
-    - link
-    - options
+  theme:
+    - patternlab
 third_party_settings:
   field_layout:
-    id: layout_onecol
-    settings: {  }
+    id: pattern_button
+    settings:
+      pattern:
+        field_templates: only_content
+        variant: ''
 _core:
   default_config_hash: vpUA4ymMBTOaFuC5rB__jV6ruJR4B6wXVDpDSLj_Woo
 id: paragraph.button.default
@@ -22,23 +24,17 @@ targetEntityType: paragraph
 bundle: button
 mode: default
 content:
-  field_button_style:
+  extra_field_field_link_text:
     weight: 0
-    label: hidden
+    region: text
     settings: {  }
     third_party_settings: {  }
-    type: list_default
-    region: content
-  field_link:
+  extra_field_field_link_url:
     weight: 1
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
+    region: url
+    settings: {  }
     third_party_settings: {  }
-    type: link
-    region: content
-hidden: {  }
+hidden:
+  extra_field_field_image_media_reference_url: true
+  field_button_style: true
+  field_link: true

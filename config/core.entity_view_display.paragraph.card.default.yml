@@ -10,13 +10,16 @@ dependencies:
     - paragraphs.paragraphs_type.card
   module:
     - field_layout
-    - layout_discovery
-    - link
     - text
+  theme:
+    - patternlab
 third_party_settings:
   field_layout:
-    id: layout_onecol
-    settings: {  }
+    id: pattern_card
+    settings:
+      pattern:
+        field_templates: only_content
+        variant: ''
 _core:
   default_config_hash: 5MsvtJZR3qB-T9xGBlBTUCKXOP5gi_7u3DfJzXxmYdQ
 id: paragraph.card.default
@@ -24,40 +27,36 @@ targetEntityType: paragraph
 bundle: card
 mode: default
 content:
-  field_image:
-    weight: 0
-    label: hidden
-    settings:
-      view_mode: card
-      link: false
-    third_party_settings: {  }
-    type: entity_reference_entity_view
-    region: content
-  field_link:
-    weight: 3
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
-  field_text:
+  extra_field_field_image_media_reference_url:
     weight: 2
+    region: img
+    settings: {  }
+    third_party_settings: {  }
+  extra_field_field_link_text:
+    weight: 3
+    region: button_text
+    settings: {  }
+    third_party_settings: {  }
+  extra_field_field_link_url:
+    weight: 4
+    region: button_url
+    settings: {  }
+    third_party_settings: {  }
+  field_text:
+    type: text_default
+    weight: 1
+    region: body
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
-    region: content
   field_title:
-    weight: 1
+    type: string
+    weight: 0
+    region: title
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
-    region: content
-hidden: {  }
+hidden:
+  field_image: true
+  field_link: true

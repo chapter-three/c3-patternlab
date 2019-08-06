@@ -8,12 +8,16 @@ dependencies:
     - paragraphs.paragraphs_type.blockquote
   module:
     - field_layout
-    - layout_discovery
     - text
+  theme:
+    - patternlab
 third_party_settings:
   field_layout:
-    id: layout_onecol
-    settings: {  }
+    id: pattern_blockquote
+    settings:
+      pattern:
+        field_templates: only_content
+        variant: ''
 _core:
   default_config_hash: m5EFKI6zaa5DLY-YQK5AC1UGt_E126-tO2XPPojrK3I
 id: paragraph.blockquote.default
@@ -22,18 +26,21 @@ bundle: blockquote
 mode: default
 content:
   field_blockquote_source:
+    type: string
     weight: 1
+    region: attribution
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
-    region: content
   field_text:
     weight: 0
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
-hidden: {  }
+    region: quote
+hidden:
+  extra_field_field_image_media_reference_url: true
+  extra_field_field_link_text: true
+  extra_field_field_link_url: true
