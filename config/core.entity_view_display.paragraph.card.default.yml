@@ -12,7 +12,7 @@ dependencies:
     - field_layout
     - text
   theme:
-    - patternlab
+    - patternlabphp
 third_party_settings:
   field_layout:
     id: pattern_card

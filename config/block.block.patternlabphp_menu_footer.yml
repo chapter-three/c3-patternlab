@@ -1,4 +1,4 @@
-uuid: ec2136ed-97d8-41fb-9e60-a681ff81fe76
+uuid: 8bc7b7d7-6993-49a5-9efb-01537179a06c
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - patternlab
+    - patternlabphp
 _core:
-  default_config_hash: QQXdztXPrcec2WkhRPeiqs96KocofDAhC_lAebdE8KM
-id: patternlab_menu_footer
-theme: patternlab
+  default_config_hash: AH3X8nrKyz3BvH8pj0KS8oQUn7lPU51W2mi8lNINSJM
+id: patternlabphp_menu_footer
+theme: patternlabphp
 region: footer
 weight: 0
 provider: null
@@ -20,7 +20,7 @@ settings:
   id: 'system_menu_block:footer'
   label: 'Footer menu'
   provider: system
-  label_display: '0'
+  label_display: visible
   level: 1
   depth: 1
   expand_all_items: false

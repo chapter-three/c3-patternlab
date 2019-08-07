@@ -14,7 +14,7 @@ dependencies:
     - text
     - user
   theme:
-    - patternlab
+    - patternlabphp
 third_party_settings:
   field_layout:
     id: pattern_card

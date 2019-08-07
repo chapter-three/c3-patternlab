@@ -1,15 +1,15 @@
-uuid: f893509b-20bb-449c-957c-50fcc96948a7
+uuid: 12cc7803-b3c6-45a1-ad35-ca55f5866987
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - patternlab
+    - patternlabphp
 _core:
-  default_config_hash: BE3Rx2ntE7aS797_YQv8EfMfYoq7qcAQO_RW-TbgKoo
-id: patternlab_messages
-theme: patternlab
+  default_config_hash: aGm4RGNwbR0oZORlz31C8CuKhQNZ277Ulfem1HtJ6y4
+id: patternlabphp_messages
+theme: patternlabphp
 region: content
 weight: 1
 provider: null
