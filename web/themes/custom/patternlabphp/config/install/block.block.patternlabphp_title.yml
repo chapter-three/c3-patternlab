@@ -1,10 +1,12 @@
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
-    - patternlab
-id: patternlab_title
-theme: patternlab
+    - patternlabphp
+id: patternlabphp_title
+theme: patternlabphp
 region: header
 weight: 10
 provider: null

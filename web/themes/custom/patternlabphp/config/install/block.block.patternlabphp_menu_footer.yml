@@ -6,9 +6,9 @@ dependencies:
   module:
     - system
   theme:
-    - patternlab
-id: patternlab_menu_footer
-theme: patternlab
+    - patternlabphp
+id: patternlabphp_menu_footer
+theme: patternlabphp
 region: footer
 weight: 0
 provider: null
@@ -17,7 +17,7 @@ settings:
   id: 'system_menu_block:footer'
   label: 'Footer menu'
   provider: system
-  label_display: '0'
+  label_display: visible
   level: 1
   depth: 1
   expand_all_items: false

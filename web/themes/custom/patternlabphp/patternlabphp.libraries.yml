@@ -1,0 +1,10 @@
+base:
+  css:
+    theme:
+      ../../../libraries/pattern-lab-php/public/css/global.css: {}
+      ../../../libraries/pattern-lab-php/public/css/components/button.css: {}
+      ../../../libraries/pattern-lab-php/public/css/components/blockquote.css: {}
+      ../../../libraries/pattern-lab-php/public/css/components/card.css: {}
+      css/style.css: {}
+      css/tabs.css: {}
+      css/patterns.css: {}

@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - patternlab
-id: patternlab_branding
-theme: patternlab
+    - patternlabphp
+id: patternlabphp_branding
+theme: patternlabphp
 region: navbar_branding
 weight: 0
 provider: null

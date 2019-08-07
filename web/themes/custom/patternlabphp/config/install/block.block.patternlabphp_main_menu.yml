@@ -2,20 +2,20 @@ langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.account
+    - system.menu.main
   module:
     - system
   theme:
-    - patternlab
-id: patternlab_menu_account
-theme: patternlab
-region: navbar_right
+    - patternlabphp
+id: patternlabphp_main_menu
+theme: patternlabphp
+region: navbar_left
 weight: 0
 provider: null
-plugin: 'system_menu_block:account'
+plugin: 'system_menu_block:main'
 settings:
-  id: 'system_menu_block:account'
-  label: 'User account menu'
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
   provider: system
   label_display: visible
   level: 1
