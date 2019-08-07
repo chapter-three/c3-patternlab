@@ -42,3 +42,7 @@ plugins:
     dataTransform:
         enabled: true
         verbose: false
+    twigNamespaces:
+        enabled: true
+        roots: {}
+
