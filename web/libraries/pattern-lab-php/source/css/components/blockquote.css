@@ -1,0 +1,15 @@
+.blockquote {
+  border: solid 1px var(--color-gray-lightest, #ededed);
+  color: var(--color-gray);
+  padding: 2rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.blockquote__quote {
+  font-size: 2rem;
+}
+
+.blockquote__attribution {
+  margin-top: 1rem;
+}
