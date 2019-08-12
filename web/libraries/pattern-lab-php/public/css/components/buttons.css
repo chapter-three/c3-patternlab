@@ -1,0 +1,25 @@
+.buttons {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 1rem 0;
+}
+
+.buttons--left {
+  justify-content: flex-start;
+}
+
+.buttons--center {
+  justify-content: center;
+}
+
+.buttons--right {
+  justify-content: flex-end;
+}
+
+.buttons--around {
+  justify-content: space-around;
+}
+
+.buttons--between {
+  justify-content: space-between;
+}

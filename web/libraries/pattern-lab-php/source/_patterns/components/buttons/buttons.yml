@@ -1,0 +1,10 @@
+align: left
+buttons:
+  -
+    text: 'First button'
+    url: '#'
+    style: primary
+  -
+    text: 'Second button'
+    url: '#'
+    style: secondary
