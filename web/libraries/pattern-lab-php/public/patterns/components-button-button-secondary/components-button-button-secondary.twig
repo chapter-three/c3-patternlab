@@ -1,1 +1,10 @@
-<a class="button{{ style ? ' button--' ~ style }}" href="{{ url }}">{{ text }}</a>
+{% set attributes = attributes ? attributes : create_attribute() %}
+
+{% set classes = [
+  'button',
+  style ? 'button--' ~ style : '',
+]|merge(classes|default([''])) %}
+
+<a {{attributes.addClass(classes) }} href="{{ url }}">
+  {{- text -}}
+</a>

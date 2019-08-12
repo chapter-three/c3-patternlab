@@ -1,0 +1,11 @@
+{% if buttons|length %}
+  <div class="buttons buttons--{{ align|default('left') }}">
+    {% for button in buttons %}
+      {% include '@components/button/button.twig' with {
+        text: button.text,
+        url: button.url,
+        style: button.style
+      } %}
+    {% endfor %}
+  </div>
+{% endif %}
