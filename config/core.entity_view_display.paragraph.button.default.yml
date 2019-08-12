@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.button
   module:
     - field_layout
+    - options
   theme:
     - patternlabphp
 third_party_settings:
@@ -34,7 +35,13 @@ content:
     region: url
     settings: {  }
     third_party_settings: {  }
+  field_button_style:
+    type: list_key
+    weight: 2
+    region: style
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   extra_field_field_image_media_reference_url: true
-  field_button_style: true
   field_link: true

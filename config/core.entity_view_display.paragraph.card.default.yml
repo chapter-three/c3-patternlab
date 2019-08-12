@@ -28,23 +28,18 @@ bundle: card
 mode: default
 content:
   extra_field_field_image_media_reference_url:
-    weight: 2
+    weight: 3
     region: img
     settings: {  }
     third_party_settings: {  }
-  extra_field_field_link_text:
-    weight: 3
-    region: button_text
-    settings: {  }
-    third_party_settings: {  }
   extra_field_field_link_url:
-    weight: 4
-    region: button_url
+    weight: 1
+    region: url
     settings: {  }
     third_party_settings: {  }
   field_text:
     type: text_default
-    weight: 1
+    weight: 2
     region: body
     label: hidden
     settings: {  }
@@ -58,5 +53,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
 hidden:
+  extra_field_field_link_text: true
   field_image: true
   field_link: true
