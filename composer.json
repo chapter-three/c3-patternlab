@@ -25,6 +25,7 @@
         "drupal/extra_field": "^1.0",
         "drupal/field_group": "~3.0.0",
         "drupal/fontawesome": "^2.14",
+        "drupal/multiple_definition_files": "^1.0",
         "drupal/paragraphs": "^1.8",
         "drupal/pathauto": "^1.4",
         "drupal/stage_file_proxy": "^1.0@beta",
