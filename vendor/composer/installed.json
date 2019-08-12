@@ -2392,6 +2392,55 @@
         }
     },
     {
+        "name": "drupal/multiple_definition_files",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/multiple_definition_files.git",
+            "reference": "8.x-1.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/multiple_definition_files-8.x-1.0.zip",
+            "reference": "8.x-1.0",
+            "shasum": "ef423dfd2a47327deb0d56e970420c2f9067c00b"
+        },
+        "require": {
+            "drupal/core": "^8.3"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0",
+                "datestamp": "1560162485",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "aleksip",
+                "homepage": "https://www.drupal.org/user/191965"
+            }
+        ],
+        "description": "Enables multiple definition files for theme asset libraries and layouts.",
+        "homepage": "https://www.drupal.org/project/multiple_definition_files",
+        "support": {
+            "source": "https://git.drupalcode.org/project/multiple_definition_files"
+        }
+    },
+    {
         "name": "drupal/paragraphs",
         "version": "1.8.0",
         "version_normalized": "1.8.0.0",
