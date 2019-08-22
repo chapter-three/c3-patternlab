@@ -24,6 +24,7 @@
 }
 .box-bg--secondary{background:#fafafa;}
 .box-bg--primary{background:#4a90e2; color: #fff;}
+.box-bg--primary .button {background-color: #F4972A;}
 .imagebg {
     background-color: rgba(0, 0, 0, 0); 
     background-repeat: no-repeat; 
