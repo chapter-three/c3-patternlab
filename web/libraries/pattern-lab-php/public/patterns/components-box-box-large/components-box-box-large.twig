@@ -13,7 +13,7 @@
 %}
 
 
-<div{{ my_attribute.addClass(my_classes) }} {% if imagebg %} style="background-image: url('{{ imagebg }}');" {% endif %}>
+<div{{ my_attribute.addClass(my_classes) }} {% if imagebg %} style="background-image: url('{{- imagebg -}}');" {% endif %}>
     {% if title %}
       <h5 class="box__title">{{ title }} </h5>
     {% endif %}
