@@ -1,0 +1,29 @@
+
+{% set my_attribute = create_attribute() %}
+{%
+  set my_classes = [
+  'box',
+  shadow ? 'box--shadow' : null,
+  border ? 'box--border' : null,
+  rounded ? 'box--rounded' : null,
+  size ? 'box--' ~ size : null,
+  bg ? 'box-bg--' ~ bg : null,
+  imagebg ? 'imagebg' : null,
+  ]
+%}
+
+
+<div{{ my_attribute.addClass(my_classes) }} {% if imagebg %} style="background-image: url('{{ imagebg }}');" {% endif %}>
+    {% if title %}
+      <h5 class="box__title">{{ title }} </h5>
+    {% endif %}
+	<p>
+		{{ body }}
+	</p>
+  {% if button.text and button.url %}
+    {% include '@components/button/button.twig' with {
+      text: button.text,
+      url: button.url
+    } %}
+  {% endif %}
+</div>

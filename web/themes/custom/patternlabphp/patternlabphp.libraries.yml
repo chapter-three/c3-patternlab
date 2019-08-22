@@ -5,6 +5,7 @@ base:
       ../../../libraries/pattern-lab-php/public/css/components/button.css: {}
       ../../../libraries/pattern-lab-php/public/css/components/blockquote.css: {}
       ../../../libraries/pattern-lab-php/public/css/components/card.css: {}
+      ../../../libraries/pattern-lab-php/public/css/components/box.css: {}
       css/style.css: {}
       css/tabs.css: {}
       css/patterns.css: {}
