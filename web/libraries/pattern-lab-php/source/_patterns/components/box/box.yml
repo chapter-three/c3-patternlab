@@ -3,7 +3,9 @@ body: "I'm a body - Lorem ipsum dolor sit amet, consectetur adipisicing elit, se
 shadow: true
 border: true
 rounded: true
+size: null
 button:
   text: 'Box button'
   url: '#'
 bg: 'secondary'
+imagebg: null
