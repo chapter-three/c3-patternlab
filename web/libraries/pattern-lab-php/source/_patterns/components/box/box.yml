@@ -1,0 +1,11 @@
+title: "Default Box"
+body: "I'm a body - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+shadow: true
+border: true
+rounded: true
+size: null
+button:
+  text: 'Box button'
+  url: '#'
+bg: 'secondary'
+imagebg: null
