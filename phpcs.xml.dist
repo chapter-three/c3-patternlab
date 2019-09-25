@@ -9,14 +9,4 @@
   <exclude-pattern>\.md</exclude-pattern>
 
   <rule ref="Drupal"/>
-
-  <!-- Copyright header must be visible on all PHP files, including classes in a namespace. -->
-  <rule ref="Drupal.Commenting.FileComment.NamespaceNoFileDoc">
-    <severity>0</severity>
-  </rule>
-  <!-- Annotation classes still contains snake case variable names. -->
-  <rule ref="Drupal.NamingConventions.ValidVariableName.LowerCamelName">
-    <severity>0</severity>
-  </rule>
-
 </ruleset>
