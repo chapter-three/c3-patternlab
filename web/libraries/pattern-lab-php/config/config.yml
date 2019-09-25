@@ -29,7 +29,7 @@ styleguideKitPath: vendor/pattern-lab/styleguidekit-twig-default
 lineageMatch: '{%([ ]+)?(?:include|extends|embed)( |\()[&quot;\&#039;]([\/.@A-Za-z0-9-_]+)[&quot;\&#039;]([\s\S+]*?)%}'
 lineageMatchKey: 3
 patternExtension: twig
-twigDebug: false
+twigDebug: true
 twigAutoescape: false
 twigDefaultDateFormat: ''
 twigDefaultIntervalFormat: ''
@@ -40,9 +40,17 @@ twigTagExt: tag.php
 twigTestExt: test.php
 plugins:
     dataTransform:
-        enabled: true
+        enabled: false
         verbose: false
     twigNamespaces:
         enabled: true
-        roots: {}
+        twigNamespaces:
+    enabled: true
+    namespaces:
+      components:
+        paths:
+          - ../source/_patterns/components
 
+
+twigExtensions:
+    - '\Ajgl\Twig\Extension\BreakpointExtension'
