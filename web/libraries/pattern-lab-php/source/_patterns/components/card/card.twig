@@ -1,25 +1,40 @@
-<div class="card">
-  <div class="card__img">
-    {% if img %}
-      <img src="{{- img -}}" alt="" class="card__img"/>
-    {% endif %}
-  </div>
+{% set attributes = attributes ? attributes : create_attribute() %}
+{% set url_attributes = url_attributes ? url_attributes : create_attribute() %}
+{% set classes = [
+  'card',
+]|merge(classes|default([''])) %}
+
+<article{{ attributes.addClass(classes) }}>
+  {% if img %}
+    <div class="card__img">
+      {% include '@components/image/image.twig' with {
+        image: { src: img, alt: 'Alt text' }
+      } %}
+    </div>
+  {% endif %}
+
   <div class="card__contents">
+
     {% if title %}
       <h2 class="card__title">
         {% if url %}
-          <a href="{{ url }}">{{ title }}</a>
+          <a href="{{ url }}"{{ url_attributes }}>{{ title }}</a>
         {% else %}
           {{ title }}
         {% endif %}
       </h2>
     {% endif %}
-    <p class="card__body">{{ body }}</p>
+
+    {% if body %}
+      <p class="card__body">{{ body }}</p>
+    {% endif %}
+
     {% if button.text and button.url %}
       {% include '@components/button/button.twig' with {
+        attributes: url_attributes,
         text: button.text,
         url: button.url
-      } %}
+      } only %}
     {% endif %}
   </div>
-</div>
+</article>
